@@ -15,7 +15,7 @@ Currently developing expertise in Artificial Intelligence (AI), specifically foc
 methodologies and their integration into robust software solutions. Active in full-stack web development.
 """
 EMAIL = "janardan7satapathy@gmail.com" 
-RESUME_FILE = "Janardan_Satapathy_Resume.pdf"
+RESUME_FILE = "Janardan-Satapathy-FlowCV-Resume-20251127.pdf"
 PROFILE_PIC = "Photo.jpg"
 
 # --- Page Setup ---
@@ -82,20 +82,21 @@ st.markdown("""
         text-shadow: 1px 1px 2px rgba(0,0,0,0.3); 
     }
     
-    /* Interactive Card/Link Effects */
-    a {
+    /* Remove default Streamlit anchor styling to allow our custom footer buttons to work */
+    .footer-link {
         text-decoration: none !important;
-        color: #ffffff !important;
-        background-color: rgba(255, 255, 255, 0.1);
-        padding: 2px 6px;
-        border-radius: 4px;
-        transition: transform 0.2s, background-color 0.2s;
-    }
-    a:hover {
+        color: white !important;
+        padding: 10px 20px;
+        border-radius: 5px;
         font-weight: bold;
+        transition: transform 0.2s, opacity 0.2s;
+        display: inline-block;
+        margin: 5px;
+    }
+    .footer-link:hover {
         transform: scale(1.05);
-        background-color: rgba(255, 255, 255, 0.3);
-        color: #FFD700 !important;
+        opacity: 0.9;
+        color: white !important;
     }
 
     /* Custom Gradient Divider Line */
@@ -307,22 +308,19 @@ with st.container():
 
 gradient_divider()
 
-# Footer
+# Footer / Socials (Refined for proper Mailto function)
 with st.container():
     st.markdown("<h3 style='text-align: center;'>Connect with Me</h3>", unsafe_allow_html=True)
     
-    # We use 2 columns instead of 4 to give the email more space if needed, or stick to 4.
-    c1, c2, c3, c4 = st.columns(4)
-    with c1:
-        # Link displaying your actual email address
-        st.markdown(f"[📧 EMAIL](mailto:janardan7satapathy@gmail.com)")
-    with c2:
-        st.markdown("[💻 GitHub](https://github.com/Janardan3satpathy)")
-    with c3:
-        st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/janardan-satapathy-48189b328/)")
-    with c4:
-        st.markdown("[📸 Instagram](https://www.instagram.com/_king_of_all_acids_?igsh=MTJrd2dsMHN2b25pYw==)")
+    # Using HTML/CSS flexbox for the footer ensures the links don't get cut off and the "mailto" works reliably.
+    st.markdown(f"""
+    <div style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <a href="mailto:{EMAIL}" class="footer-link" style="background-color: #D44638;">📧 {EMAIL}</a>
+        <a href="https://github.com/Janardan3satpathy" target="_blank" class="footer-link" style="background-color: #333;">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/janardan-satapathy-48189b328/" target="_blank" class="footer-link" style="background-color: #0077B5;">🔗 LinkedIn</a>
+        <a href="https://www.instagram.com/_king_of_all_acids_?igsh=MTJrd2dsMHN2b25pYw==" target="_blank" class="footer-link" style="background-color: #E1306C;">📸 Instagram</a>
+    </div>
+    """, unsafe_allow_html=True)
 
     st.markdown("---")
-
     st.caption("© Developed & Maintained By Janardan Satapathy")
