@@ -15,7 +15,7 @@ Currently developing expertise in Artificial Intelligence (AI), specifically foc
 methodologies and their integration into robust software solutions. Active in full-stack web development.
 """
 EMAIL = "janardan7satapathy@gmail.com" 
-RESUME_FILE = "Janardan-Satapathy-FlowCV-Resume-20251127.pdf"
+RESUME_FILE = "Janardan_Satapathy_Resume.pdf"
 PROFILE_PIC = "Photo.jpg"
 
 # --- Page Setup ---
@@ -315,7 +315,7 @@ with st.container():
     # Using HTML/CSS flexbox for the footer ensures the links don't get cut off and the "mailto" works reliably.
     st.markdown(f"""
     <div style="display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap;">
-        <a href="mailto:{EMAIL}" class="footer-link" style="background-color: #D44638;">📧 {EMAIL}</a>
+        <a href="mailto:{EMAIL}" class="footer-link" style="background-color: #D44638;">📧 EMAIL</a>
         <a href="https://github.com/Janardan3satpathy" target="_blank" class="footer-link" style="background-color: #333;">💻 GitHub</a>
         <a href="https://www.linkedin.com/in/janardan-satapathy-48189b328/" target="_blank" class="footer-link" style="background-color: #0077B5;">🔗 LinkedIn</a>
         <a href="https://www.instagram.com/_king_of_all_acids_?igsh=MTJrd2dsMHN2b25pYw==" target="_blank" class="footer-link" style="background-color: #E1306C;">📸 Instagram</a>
@@ -324,3 +324,4 @@ with st.container():
 
     st.markdown("---")
     st.caption("© Developed & Maintained By Janardan Satapathy")
+
