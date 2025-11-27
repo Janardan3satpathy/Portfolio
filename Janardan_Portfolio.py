@@ -15,7 +15,7 @@ Currently developing expertise in Artificial Intelligence (AI), specifically foc
 methodologies and their integration into robust software solutions. Active in full-stack web development.
 """
 EMAIL = "janardan7satapathy@gmail.com" 
-RESUME_FILE = "Janardan-Satapathy-FlowCV-Resume-20251127.pdf"
+RESUME_FILE = "Janardan_Satapathy_Resume.pdf"
 PROFILE_PIC = "Photo.jpg"
 
 # --- Page Setup ---
@@ -324,4 +324,5 @@ with st.container():
         st.markdown("[📸 Instagram](https://www.instagram.com/_king_of_all_acids_?igsh=MTJrd2dsMHN2b25pYw==)")
 
     st.markdown("---")
+
     st.caption("© Developed & Maintained By Janardan Satapathy")
