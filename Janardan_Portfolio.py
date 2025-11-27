@@ -220,6 +220,9 @@ with tab1:
     st.caption("Indian Institute Of Technology (IIT), Ropar | 10/2024 - 10/2025")
     st.write("**Class XII (Science)**")
     st.caption("D.A.V Public School Pokhariput, Bhubaneswar | 04/2020 - 03/2022 | 76.2%")
+    st.write("**Class X **")
+    st.caption("D.A.V Public School Pokhariput, Bhubaneswar | 04/2008 - 03/2020 | 93%")
+
 
 with tab2:
     st.subheader("Internships")
@@ -253,9 +256,6 @@ with tab3:
 gradient_divider()
 st.header("💻 Featured Projects")
 
-with st.expander("AI in Market Analysis (Global AI Job Market)", expanded=True):
-    st.write("Developed an advanced ML regression model to accurately predict and analyze global salaries based on key professional and geographic factors.")
-
 with st.expander("Opinion Evaluation"):
     st.write("A structured process of examining unstructured customer feedback to identify patterns and gauge sentiment.")
     st.markdown("[View on GitHub](https://github.com/Janardan3satpathy/Opinion-Evaluation) | [🚀 Live App](https://opinion-evaluation.streamlit.app/)")
@@ -267,6 +267,9 @@ with st.expander("Name Matcher"):
 with st.expander("Recipe Chat Bot"):
     st.write("An AI-based Recipe Chat BOT that is used to provide recipes by only using the ingredients.")
     st.markdown("[View on GitHub](https://github.com/Janardan3satpathy/Receipe-bot) | [🚀 Live App](https://receipebotjanardan.streamlit.app/)")
+
+with st.expander("AI in Market Analysis (Global AI Job Market)", expanded=True):
+    st.write("Developed an advanced ML regression model to accurately predict and analyze global salaries based on key professional and geographic factors.")
 
 gradient_divider()
 
@@ -324,5 +327,6 @@ with st.container():
 
     st.markdown("---")
     st.caption("© Developed & Maintained By Janardan Satapathy")
+
 
 
