@@ -202,7 +202,7 @@ with st.container():
         st.markdown(f"""
         My Name is <span class='name-text'>{NAME}</span>. I'm born & brought up in Bhubaneswar, Odisha.
         
-        I am a 7th Semester **B.Tech (CSE)** student at Sha-Shib College of Technology, Bhopal, with a minor in **Artificial Intelligence** from IIT Ropar.
+        I am a 7th Semester **B.Tech (CSE)** student at Rajiv Gandhi Prodyogiki Vishwavidyalaya, Bhopal, with a minor in **Artificial Intelligence** from IIT Ropar.
         
         I am eager to apply my skills in intelligent systems development, data analysis, and AI-driven applications.
         """, unsafe_allow_html=True)
@@ -215,7 +215,7 @@ tab1, tab2, tab3 = st.tabs(["Education", "Experience", "Skills"])
 with tab1:
     st.subheader("Education")
     st.write("**B. Tech in Computer Science & Engineering (CSE)**")
-    st.caption("Sha-Shib College of Technology, Bhopal | 08/2022 - Present | CGPA: 7.8")
+    st.caption("Rajiv Gandhi Prodyogiki Vishwavidyalaya, Bhopal | 08/2022 - Present | CGPA: 7.8")
     st.write("**Minor in Artificial Intelligence (AI)**")
     st.caption("Indian Institute Of Technology (IIT), Ropar | 10/2024 - 10/2025")
     st.write("**Class XII (Science)**")
@@ -327,6 +327,7 @@ with st.container():
 
     st.markdown("---")
     st.caption("© Developed & Maintained By Janardan Satapathy")
+
 
 
 
