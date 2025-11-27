@@ -61,6 +61,19 @@ st.markdown("""
         color: #f0f0f0;
         font-weight: 500;
     }
+    /* This targets standard markdown links inside the main app */
+    div[data-testid="stMarkdownContainer"] a {
+        color: #ffffff !important; /* Force White Text */
+        font-weight: bold;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+        padding: 4px 10px;
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+        display: inline-block;
+        margin-right: 5px;
+    }
 
     .name-text { 
         color: #FFD700; 
@@ -327,6 +340,7 @@ with st.container():
 
     st.markdown("---")
     st.caption("© Developed & Maintained By Janardan Satapathy")
+
 
 
 
