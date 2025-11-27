@@ -208,7 +208,7 @@ with st.container():
         if os.path.exists(PROFILE_PIC):
             st.image(PROFILE_PIC, caption="Janardan's Pic", width=200)
         else:
-            st.image("https://placehold.co/200x200?text=Janardan", caption="Janardan's Pic", width=200)
+            st.image("https://placehold.co/200x200?text=Janardan",width=200)
             
     with col2:
         st.header("About Me")
@@ -340,6 +340,7 @@ with st.container():
 
     st.markdown("---")
     st.caption("© Developed & Maintained By Janardan Satapathy")
+
 
 
 
