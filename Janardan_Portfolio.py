@@ -206,7 +206,7 @@ with st.container():
     col1, col2 = st.columns([1, 2])
     with col1:
         if os.path.exists(PROFILE_PIC):
-            st.image(PROFILE_PIC, caption="Janardan's Pic", width=200)
+            st.image(PROFILE_PIC, width=200)
         else:
             st.image("https://placehold.co/200x200?text=Janardan",width=200)
             
@@ -340,6 +340,7 @@ with st.container():
 
     st.markdown("---")
     st.caption("© Developed & Maintained By Janardan Satapathy")
+
 
 
 
