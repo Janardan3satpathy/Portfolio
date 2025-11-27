@@ -295,7 +295,7 @@ with st.container():
                     status = save_data(name, email, number, message)
                     
                     if status == "success_cloud":
-                        st.success("Message sent! Saved directly to Google Drive/Sheets.")
+                        st.success("Message sent!")
                     elif status == "success_local":
                         st.success("Message saved locally! (CSV)")
                         st.info("Tip: Setup Google Sheets for cloud storage. See setup_guide.md")
@@ -324,4 +324,5 @@ with st.container():
 
     st.markdown("---")
     st.caption("© Developed & Maintained By Janardan Satapathy")
+
 
